@@ -5,6 +5,7 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (strong, nonatomic) IBOutlet ModelContainer* modelContainer;
 
 @end
@@ -20,6 +21,6 @@
     
     PersonViewModel * pvm = [[PersonViewModel alloc] initWithModel:person];
     self.modelContainer.viewModel = pvm;
+    
 }
-
 @end

@@ -22,7 +22,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outlet property="delegate" destination="03o-Pz-6dO" id="xIQ-c6-YpN"/>
+                                    <outlet property="delegate" destination="Bus-gn-nEG" id="iQw-V4-Skn"/>
                                 </connections>
                             </textField>
                             <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G4W-NJ-le1">
@@ -31,7 +31,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outlet property="delegate" destination="03o-Pz-6dO" id="bkU-dQ-cqK"/>
+                                    <outlet property="delegate" destination="Bus-gn-nEG" id="9ac-GT-6Rx"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mj-dW-8AH">
@@ -82,7 +82,7 @@
                                     <!--2014-09-30 18:38:59 +0000-->
                                 </date>
                                 <timeZone key="timeZone" name="America/Los_Angeles">
-                                    <mutableData key="data">
+                                    <data key="data">
 VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
 y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
 5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
@@ -100,13 +100,14 @@ f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</mutableData>
+</data>
                                 </timeZone>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="firstNameTextField" destination="5H1-X6-RDs" id="Z4M-7c-ZZY"/>
                         <outlet property="modelContainer" destination="aAA-6g-i99" id="vhM-sS-hdA"/>
                     </connections>
                 </viewController>
@@ -131,7 +132,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </customObject>
                 <customObject id="03o-Pz-6dO" customClass="DismissOnEnterIntention"/>
                 <customObject id="aAA-6g-i99" customClass="ModelContainer"/>
-                <customObject id="Djx-kK-KEG" customClass="ObserveIntention">
+                <customObject id="Djx-kK-KEG" userLabel="FirstName Observe" customClass="ObserveIntention">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="sourceKeyPath" value="viewModel.model.name"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="targetKeyPath" value="text"/>
@@ -141,17 +142,27 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="target" destination="5H1-X6-RDs" id="9mr-ea-QCT"/>
                     </connections>
                 </customObject>
-                <customObject id="eNd-pw-lXs" customClass="ObserveIntention">
+                <customObject id="eNd-pw-lXs" userLabel="Surname Field Observe" customClass="ObserveIntention">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="sourceKeyPath" value="text"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="targetKeyPath" value="viewModel.model.surname"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="sourceObject" destination="G4W-NJ-le1" id="xMQ-bI-2t1"/>
+                        <outlet property="target" destination="aAA-6g-i99" id="OdU-99-JKi"/>
+                    </connections>
+                </customObject>
+                <customObject id="3d9-gS-d9Y" userLabel="Surname Observe" customClass="ObserveIntention">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="sourceKeyPath" value="viewModel.model.surname"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="targetKeyPath" value="text"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <outlet property="sourceObject" destination="aAA-6g-i99" id="kS9-gN-dcl"/>
-                        <outlet property="target" destination="G4W-NJ-le1" id="EGq-pk-yYH"/>
+                        <outlet property="sourceObject" destination="aAA-6g-i99" id="Ipy-Mc-BMV"/>
+                        <outlet property="target" destination="G4W-NJ-le1" id="KGV-K5-Loe"/>
                     </connections>
                 </customObject>
-                <customObject id="ob4-KS-0fa" customClass="ObserveIntention">
+                <customObject id="ob4-KS-0fa" userLabel="FullName Observe" customClass="ObserveIntention">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="sourceKeyPath" value="viewModel.fullName"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="targetKeyPath" value="text"/>
@@ -159,6 +170,29 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <connections>
                         <outlet property="sourceObject" destination="aAA-6g-i99" id="7yR-Qe-lFP"/>
                         <outlet property="target" destination="uGt-PU-jHu" id="glV-W0-v9y"/>
+                    </connections>
+                </customObject>
+                <customObject id="Bus-gn-nEG" userLabel="TextField Delegate Multiplexer" customClass="MultiplexerProxyBehavior">
+                    <connections>
+                        <outletCollection property="targets" destination="03o-Pz-6dO" id="fe0-zp-o3C"/>
+                    </connections>
+                </customObject>
+                <customObject id="2f5-wT-yX0" customClass="UITextFieldTextObserveIntention">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="targetKeyPath" value="viewModel.model.name"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="sourceObject" destination="5H1-X6-RDs" id="zvb-2q-EH9"/>
+                        <outlet property="target" destination="aAA-6g-i99" id="ue7-U5-Ajx"/>
+                    </connections>
+                </customObject>
+                <customObject id="Afo-yl-cX4" customClass="UITextFieldTextObserveIntention">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="targetKeyPath" value="viewModel.model.surname"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="sourceObject" destination="G4W-NJ-le1" id="Lzu-6x-aFK"/>
+                        <outlet property="target" destination="aAA-6g-i99" id="AUd-km-GFb"/>
                     </connections>
                 </customObject>
             </objects>

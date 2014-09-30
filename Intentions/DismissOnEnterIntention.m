@@ -14,13 +14,10 @@
 
 @implementation DismissOnEnterIntention
 
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    if ([string isEqualToString:@"\n"]) {
-        [textField resignFirstResponder];
-        return NO;
-    }
-    return YES;
+    [textField resignFirstResponder];
+    return NO;
 }
 
 @end

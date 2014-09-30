@@ -30,6 +30,8 @@
 		83C0D94D18D5F6F40052E3B3 /* ReverseIntention.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C0D94C18D5F6F40052E3B3 /* ReverseIntention.m */; };
 		AFCB77BA19DB3146001D879E /* PersonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCB77B919DB3146001D879E /* PersonViewModel.m */; };
 		AFCB77BD19DB342F001D879E /* AbstractViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCB77BC19DB342F001D879E /* AbstractViewModel.m */; };
+		AFCB77C019DB3A9B001D879E /* MultiplexerProxyBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCB77BF19DB3A9B001D879E /* MultiplexerProxyBehaviour.m */; };
+		AFCB77C619DB41BE001D879E /* UITextFieldTextObserveIntention.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCB77C519DB41BE001D879E /* UITextFieldTextObserveIntention.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,10 @@
 		AFCB77B919DB3146001D879E /* PersonViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewModel.m; sourceTree = "<group>"; };
 		AFCB77BB19DB342F001D879E /* AbstractViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewModel.h; sourceTree = "<group>"; };
 		AFCB77BC19DB342F001D879E /* AbstractViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewModel.m; sourceTree = "<group>"; };
+		AFCB77BE19DB3A9B001D879E /* MultiplexerProxyBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiplexerProxyBehaviour.h; sourceTree = "<group>"; };
+		AFCB77BF19DB3A9B001D879E /* MultiplexerProxyBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiplexerProxyBehaviour.m; sourceTree = "<group>"; };
+		AFCB77C419DB41BE001D879E /* UITextFieldTextObserveIntention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldTextObserveIntention.h; sourceTree = "<group>"; };
+		AFCB77C519DB41BE001D879E /* UITextFieldTextObserveIntention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldTextObserveIntention.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,8 @@
 				AFCB77B919DB3146001D879E /* PersonViewModel.m */,
 				AFCB77BB19DB342F001D879E /* AbstractViewModel.h */,
 				AFCB77BC19DB342F001D879E /* AbstractViewModel.m */,
+				AFCB77BE19DB3A9B001D879E /* MultiplexerProxyBehaviour.h */,
+				AFCB77BF19DB3A9B001D879E /* MultiplexerProxyBehaviour.m */,
 			);
 			path = Intentions;
 			sourceTree = "<group>";
@@ -201,6 +209,8 @@
 				83C0D94318D5EE830052E3B3 /* DismissOnEnterIntention.m */,
 				83C0D94818D5F44A0052E3B3 /* ObserveIntention.h */,
 				83C0D94918D5F44A0052E3B3 /* ObserveIntention.m */,
+				AFCB77C419DB41BE001D879E /* UITextFieldTextObserveIntention.h */,
+				AFCB77C519DB41BE001D879E /* UITextFieldTextObserveIntention.m */,
 			);
 			name = Intention;
 			sourceTree = "<group>";
@@ -309,10 +319,12 @@
 				83C0D94118D5EE590052E3B3 /* Person.m in Sources */,
 				83C0D94418D5EE830052E3B3 /* DismissOnEnterIntention.m in Sources */,
 				AFCB77BD19DB342F001D879E /* AbstractViewModel.m in Sources */,
+				AFCB77C019DB3A9B001D879E /* MultiplexerProxyBehaviour.m in Sources */,
 				83C0D94718D5F39C0052E3B3 /* ModelContainer.m in Sources */,
 				83C0D91218D5EA2E0052E3B3 /* AppDelegate.m in Sources */,
 				AFCB77BA19DB3146001D879E /* PersonViewModel.m in Sources */,
 				83C0D93E18D5ECBA0052E3B3 /* UppercaseIntention.m in Sources */,
+				AFCB77C619DB41BE001D879E /* UITextFieldTextObserveIntention.m in Sources */,
 				83C0D90E18D5EA2E0052E3B3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
