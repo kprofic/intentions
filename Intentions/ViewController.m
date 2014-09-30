@@ -5,7 +5,6 @@
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (strong, nonatomic) IBOutlet ModelContainer* modelContainer;
 
 @end
