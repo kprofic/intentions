@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AbstractViewModel.h"
 
+// ViewModelContainer
 @interface ModelContainer : NSObject
 
-@property (nonatomic) id model;
+@property (nonatomic) AbstractViewModel * viewModel;
 
 @end

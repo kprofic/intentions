@@ -21,7 +21,7 @@
 @implementation UppercaseIntention
 
 - (IBAction)capitalize:(id)sender {
-    [self.modelContainer.model setValue:self.textField.text.uppercaseString
+    [self.modelContainer.viewModel.model setValue:self.textField.text.uppercaseString
                              forKeyPath:self.modelKeyPath];
 }
 

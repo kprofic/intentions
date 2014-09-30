@@ -1,6 +1,7 @@
 #import "ViewController.h"
 #import "ModelContainer.h"
 #import "Person.h"
+#import "PersonViewModel.h"
 
 @interface ViewController ()
 
@@ -14,8 +15,11 @@
 {
     [super viewDidLoad];
     Person *person = [Person new];
-    person.name = @"Chris";
-    self.modelContainer.model = person;
+    person.name = @"Krzysztof";
+    person.surname = @"Profic";
+    
+    PersonViewModel * pvm = [[PersonViewModel alloc] initWithModel:person];
+    self.modelContainer.viewModel = pvm;
 }
 
 @end

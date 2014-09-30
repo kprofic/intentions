@@ -21,7 +21,7 @@
 @implementation ReverseIntention
 
 - (IBAction)reverse:(id)sender {
-    [self.modelContainer.model setValue:self.textField.text.reversedString forKeyPath:self.modelKeyPath];
+    [self.modelContainer.viewModel.model setValue:self.textField.text.reversedString forKeyPath:self.modelKeyPath];
 }
 
 @end
