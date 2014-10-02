@@ -145,26 +145,12 @@
 		83C0D90718D5EA2E0052E3B3 /* Intentions */ = {
 			isa = PBXGroup;
 			children = (
-				83C0D91018D5EA2E0052E3B3 /* AppDelegate.h */,
-				83C0D91118D5EA2E0052E3B3 /* AppDelegate.m */,
-				83C0D91318D5EA2E0052E3B3 /* Main.storyboard */,
-				83C0D91618D5EA2E0052E3B3 /* ViewController.h */,
-				83C0D91718D5EA2E0052E3B3 /* ViewController.m */,
-				83C0D91918D5EA2E0052E3B3 /* Images.xcassets */,
-				83C0D90818D5EA2E0052E3B3 /* Supporting Files */,
-				83C0D93918D5EB2C0052E3B3 /* NSString+Reverse.h */,
-				83C0D93A18D5EB2C0052E3B3 /* NSString+Reverse.m */,
+				AF5793FF19DD4F0D00299E1A /* Model */,
+				AF57940119DD4F6A00299E1A /* View */,
+				AF57940219DD4F8800299E1A /* ViewModel */,
 				83EB7BF318D602BC006A843C /* Intention */,
-				83C0D93F18D5EE590052E3B3 /* Person.h */,
-				83C0D94018D5EE590052E3B3 /* Person.m */,
-				83C0D94518D5F39C0052E3B3 /* ModelContainer.h */,
-				83C0D94618D5F39C0052E3B3 /* ModelContainer.m */,
-				AFCB77B819DB3146001D879E /* PersonViewModel.h */,
-				AFCB77B919DB3146001D879E /* PersonViewModel.m */,
-				AFCB77BB19DB342F001D879E /* AbstractViewModel.h */,
-				AFCB77BC19DB342F001D879E /* AbstractViewModel.m */,
-				AFCB77BE19DB3A9B001D879E /* MultiplexerProxyBehaviour.h */,
-				AFCB77BF19DB3A9B001D879E /* MultiplexerProxyBehaviour.m */,
+				AF57940019DD4F5900299E1A /* Helper */,
+				83C0D90818D5EA2E0052E3B3 /* Supporting Files */,
 			);
 			path = Intentions;
 			sourceTree = "<group>";
@@ -172,6 +158,9 @@
 		83C0D90818D5EA2E0052E3B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83C0D91918D5EA2E0052E3B3 /* Images.xcassets */,
+				83C0D91018D5EA2E0052E3B3 /* AppDelegate.h */,
+				83C0D91118D5EA2E0052E3B3 /* AppDelegate.m */,
 				83C0D90918D5EA2E0052E3B3 /* Intentions-Info.plist */,
 				83C0D90A18D5EA2E0052E3B3 /* InfoPlist.strings */,
 				83C0D90D18D5EA2E0052E3B3 /* main.m */,
@@ -211,8 +200,51 @@
 				83C0D94918D5F44A0052E3B3 /* ObserveIntention.m */,
 				AFCB77C419DB41BE001D879E /* UITextFieldTextObserveIntention.h */,
 				AFCB77C519DB41BE001D879E /* UITextFieldTextObserveIntention.m */,
+				AFCB77BE19DB3A9B001D879E /* MultiplexerProxyBehaviour.h */,
+				AFCB77BF19DB3A9B001D879E /* MultiplexerProxyBehaviour.m */,
 			);
 			name = Intention;
+			sourceTree = "<group>";
+		};
+		AF5793FF19DD4F0D00299E1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83C0D93F18D5EE590052E3B3 /* Person.h */,
+				83C0D94018D5EE590052E3B3 /* Person.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AF57940019DD4F5900299E1A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				83C0D93918D5EB2C0052E3B3 /* NSString+Reverse.h */,
+				83C0D93A18D5EB2C0052E3B3 /* NSString+Reverse.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		AF57940119DD4F6A00299E1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83C0D91318D5EA2E0052E3B3 /* Main.storyboard */,
+				83C0D91618D5EA2E0052E3B3 /* ViewController.h */,
+				83C0D91718D5EA2E0052E3B3 /* ViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AF57940219DD4F8800299E1A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				83C0D94518D5F39C0052E3B3 /* ModelContainer.h */,
+				83C0D94618D5F39C0052E3B3 /* ModelContainer.m */,
+				AFCB77BB19DB342F001D879E /* AbstractViewModel.h */,
+				AFCB77BC19DB342F001D879E /* AbstractViewModel.m */,
+				AFCB77B819DB3146001D879E /* PersonViewModel.h */,
+				AFCB77B919DB3146001D879E /* PersonViewModel.m */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
