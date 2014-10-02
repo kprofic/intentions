@@ -28,6 +28,8 @@
 		83C0D94718D5F39C0052E3B3 /* ModelContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C0D94618D5F39C0052E3B3 /* ModelContainer.m */; };
 		83C0D94A18D5F44A0052E3B3 /* ObserveIntention.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C0D94918D5F44A0052E3B3 /* ObserveIntention.m */; };
 		83C0D94D18D5F6F40052E3B3 /* ReverseIntention.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C0D94C18D5F6F40052E3B3 /* ReverseIntention.m */; };
+		AF57940519DD515500299E1A /* LoginIntention.m in Sources */ = {isa = PBXBuildFile; fileRef = AF57940419DD515500299E1A /* LoginIntention.m */; };
+		AF57940819DD51AC00299E1A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF57940719DD51AC00299E1A /* LoginViewController.m */; };
 		AFCB77BA19DB3146001D879E /* PersonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCB77B919DB3146001D879E /* PersonViewModel.m */; };
 		AFCB77BD19DB342F001D879E /* AbstractViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCB77BC19DB342F001D879E /* AbstractViewModel.m */; };
 		AFCB77C019DB3A9B001D879E /* MultiplexerProxyBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCB77BF19DB3A9B001D879E /* MultiplexerProxyBehaviour.m */; };
@@ -78,6 +80,10 @@
 		83C0D94918D5F44A0052E3B3 /* ObserveIntention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObserveIntention.m; sourceTree = "<group>"; };
 		83C0D94B18D5F6F30052E3B3 /* ReverseIntention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseIntention.h; sourceTree = "<group>"; };
 		83C0D94C18D5F6F40052E3B3 /* ReverseIntention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseIntention.m; sourceTree = "<group>"; };
+		AF57940319DD515500299E1A /* LoginIntention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginIntention.h; sourceTree = "<group>"; };
+		AF57940419DD515500299E1A /* LoginIntention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginIntention.m; sourceTree = "<group>"; };
+		AF57940619DD51AC00299E1A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		AF57940719DD51AC00299E1A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		AFCB77B819DB3146001D879E /* PersonViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewModel.h; sourceTree = "<group>"; };
 		AFCB77B919DB3146001D879E /* PersonViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewModel.m; sourceTree = "<group>"; };
 		AFCB77BB19DB342F001D879E /* AbstractViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewModel.h; sourceTree = "<group>"; };
@@ -190,6 +196,8 @@
 		83EB7BF318D602BC006A843C /* Intention */ = {
 			isa = PBXGroup;
 			children = (
+				AF57940319DD515500299E1A /* LoginIntention.h */,
+				AF57940419DD515500299E1A /* LoginIntention.m */,
 				83C0D93C18D5ECBA0052E3B3 /* UppercaseIntention.h */,
 				83C0D93D18D5ECBA0052E3B3 /* UppercaseIntention.m */,
 				83C0D94B18D5F6F30052E3B3 /* ReverseIntention.h */,
@@ -230,6 +238,8 @@
 				83C0D91318D5EA2E0052E3B3 /* Main.storyboard */,
 				83C0D91618D5EA2E0052E3B3 /* ViewController.h */,
 				83C0D91718D5EA2E0052E3B3 /* ViewController.m */,
+				AF57940619DD51AC00299E1A /* LoginViewController.h */,
+				AF57940719DD51AC00299E1A /* LoginViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -292,7 +302,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Chris Eidhof";
+				ORGANIZATIONNAME = "Krzysztof Profic";
 				TargetAttributes = {
 					83C0D91E18D5EA2E0052E3B3 = {
 						TestTargetID = 83C0D8FD18D5EA2E0052E3B3;
@@ -349,8 +359,10 @@
 				83C0D94A18D5F44A0052E3B3 /* ObserveIntention.m in Sources */,
 				83C0D94D18D5F6F40052E3B3 /* ReverseIntention.m in Sources */,
 				83C0D94118D5EE590052E3B3 /* Person.m in Sources */,
+				AF57940519DD515500299E1A /* LoginIntention.m in Sources */,
 				83C0D94418D5EE830052E3B3 /* DismissOnEnterIntention.m in Sources */,
 				AFCB77BD19DB342F001D879E /* AbstractViewModel.m in Sources */,
+				AF57940819DD51AC00299E1A /* LoginViewController.m in Sources */,
 				AFCB77C019DB3A9B001D879E /* MultiplexerProxyBehaviour.m in Sources */,
 				83C0D94718D5F39C0052E3B3 /* ModelContainer.m in Sources */,
 				83C0D91218D5EA2E0052E3B3 /* AppDelegate.m in Sources */,
